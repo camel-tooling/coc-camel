@@ -46,6 +46,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ```
 Opening the `:CocConfig` file
 
+
 Evaluating it by calling `:CocList services` to check the running services and also please refer this document to debug further - https://github.com/neoclide/coc.nvim/wiki/Debug-language-server.
 
 
