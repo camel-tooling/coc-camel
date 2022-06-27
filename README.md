@@ -12,7 +12,7 @@ This is short instructions for how to integrate Camel LS with Vim editor using c
 
 ## Prerequisites
 
-Add these plugins in your `.vimrc` or `init.vim`
+Add this plugin in your `.vimrc` or `init.vim`
 ```
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ```
@@ -30,7 +30,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
   call plug#end()
 ```
-### Configuration is required to make coc.nvim easier to work with. This is done as much as possible to avoid conflict with other plugins.
 
 ### In a `CocConfig` file:
 ```
