@@ -1,0 +1,63 @@
+{
+  "name": "coc-camel",
+  "version": "0.0.0-development",
+  "description": "",
+  "author": "npr <npr@redhat.com>",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim"
+  ],
+  "engines": {
+    "coc": ">=0.0.79",
+    "node": ">=10.0.0 <=18.0.0"
+  },
+  "scripts": {
+    "lint": "eslint src --ext ts",
+    "clean": "rimraf lib",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js",
+    "prepare": "node esbuild.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "semi": true
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "@types/glob": "7.2.0",
+    "glob": "^7.2.0",
+    "coc.nvim": "^0.0.80",
+    "esbuild": "^0.14.24",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.2"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-camel configuration",
+      "properties": {
+        "coc-camel.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable coc-camel extension"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "coc-camel.Command",
+        "title": "coc-camel command title"
+      }
+    ]
+  }
+}
