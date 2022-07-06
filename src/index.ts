@@ -21,11 +21,11 @@ export async function activate(context: ExtensionContext): Promise<void> {
     }
 
     const camells_Jar = {
-    name: 'camel-lsp-server',
-    version: '1.5.0',
-    remote_Path: 'https://repo1.maven.org/maven2/com/github/camel-tooling/camel-lsp-server/',
-    local_Path: '/opt',
-    suffix: '.jar'
+                name: 'camel-lsp-server',
+                version: '1.5.0',
+                remote_Path: 'https://repo1.maven.org/maven2/com/github/camel-tooling/camel-lsp-server/',
+                local_Path: '/opt',
+                suffix: '.jar'
     }
 
     const jarPath = camells_Jar.local_Path + '/' + camells_Jar.name + '-' + camells_Jar.version + camells_Jar.suffix
@@ -34,10 +34,10 @@ export async function activate(context: ExtensionContext): Promise<void> {
     // Verify camells is already available on the local system
     if (! Boolean(jarFound[0])) {
     download_camells_Jar(camells_Jar.remote_Path,
-                 camells_Jar.version,
-                 camells_Jar.name,
-                 camells_Jar.suffix
-    )
+                         camells_Jar.version,
+                         camells_Jar.name,
+                         camells_Jar.suffix
+            )
     }
     
     const serverOptions = {
@@ -49,10 +49,10 @@ export async function activate(context: ExtensionContext): Promise<void> {
         documentSelector: ['java', 'xml'] // run camells on java files
     }
     const client = new LanguageClient('coc-camel', // the id
-                              'coc-camel', // the name of the language server
-                          serverOptions,
-                          clientOptions,
-                             true
-    )
+                                      'coc-camel', // the name of the language server
+                                      serverOptions,
+                                      clientOptions,
+                                      true
+                ) 
     context.subscriptions.push(services.registLanguageClient(client))
 }
