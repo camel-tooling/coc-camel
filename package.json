@@ -6,7 +6,9 @@
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "keywords": [
-    "coc.nvim"
+    "vim",
+    "coc.nvim",
+    "Apache Camel"
   ],
   "engines": {
     "coc": ">=0.0.79",
@@ -52,12 +54,6 @@
           "description": "Enable coc-camel extension"
         }
       }
-    },
-    "commands": [
-      {
-        "command": "coc-camel.Command",
-        "title": "coc-camel command title"
-      }
-    ]
+    }
   }
 }
