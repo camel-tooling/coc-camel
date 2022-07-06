@@ -16,7 +16,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
      */
     const config = workspace.getConfiguration('coc-camel')
     const isEnable = config.get<boolean>('enable', true)
-      if (!isEnable) {
+    if (!isEnable) {
         return
     }
 
