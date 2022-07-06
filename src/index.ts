@@ -33,7 +33,6 @@ export async function activate(context: ExtensionContext): Promise<void> {
     
     // Verify camells is already available on the local system
     if (! Boolean(jarFound[0])) {
-    // console.log("Couldn't find Jar File, So downloading the Camel LS Jar")
     download_camells_Jar(camells_Jar.remote_Path,
                  camells_Jar.version,
                  camells_Jar.name,
@@ -42,7 +41,6 @@ export async function activate(context: ExtensionContext): Promise<void> {
     }
     
     const serverOptions = {
-        // command: '/usr/bin/java -jar'.concat(' ').concat(jarPath).toString() // run camells
         command: 'java',
         args: ["-jar", jarPath]
     }
