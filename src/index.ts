@@ -46,7 +46,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     }
     
     const clientOptions = {
-        documentSelector: ['java', 'xml'] // run camells on java files
+        documentSelector: ['java', 'xml', 'yaml'] // run camells
     }
     const client = new LanguageClient('coc-camel', // the id
                                       'coc-camel', // the name of the language server
