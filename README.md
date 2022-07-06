@@ -31,6 +31,13 @@ For instance, code completion for JAVA with Camel DSL. The capabilities are base
 
 ![Demo](images/javanvim.gif)
 
+## How to contribute 
+To build local development environment please run these commands at the project root.
+```
+npm install esbuild
+yarn
+```
+
 ## License
 
 Apache License
