@@ -1,7 +1,7 @@
 {
   "name": "coc-camel",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "Camel Language extension for coc.nvim",
   "author": "npr <npr@redhat.com>",
   "license": "Apache-2.0",
   "main": "lib/index.js",
