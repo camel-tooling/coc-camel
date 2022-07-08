@@ -27,15 +27,15 @@
     "semi": true
   },
   "devDependencies": {
+    "@types/glob": "7.2.0",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
-    "@types/glob": "7.2.0",
-    "glob": "^7.2.0",
     "coc.nvim": "^0.0.80",
     "esbuild": "^0.14.24",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "glob": "^7.2.0",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.6.2"
