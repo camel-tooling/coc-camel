@@ -1,0 +1,26 @@
+# This workflow will run "yarn install" on coc-camel to check for build errors
+# GitHub Actions - https://github.com/marketplace?type=actions
+#
+
+name: 'Build coc-camel'
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  setup:
+   runs-on: ubuntu-latest
+
+   steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+            node-version: 16
+            cache: 'yarn'
+
+    - run: yarn
+
+

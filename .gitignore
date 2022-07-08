@@ -2,3 +2,4 @@
 .npmignore
 lib/
 node_modules/
+.yarn
