@@ -1,7 +1,11 @@
 {
   "name": "coc-camel",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "Camel Language extension for coc.nvim",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camel-tooling/coc-camel"
+  },
   "author": "npr <npr@redhat.com>",
   "license": "Apache-2.0",
   "main": "lib/index.js",
@@ -15,7 +19,6 @@
     "node": ">=10.0.0 <=18.0.0"
   },
   "scripts": {
-    "lint": "eslint src --ext ts",
     "clean": "rimraf lib",
     "watch": "node esbuild.js --watch",
     "build": "node esbuild.js",
