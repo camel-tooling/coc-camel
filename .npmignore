@@ -1,0 +1,4 @@
+*.lock
+src/
+esbuild.js
+tsconfig.json
