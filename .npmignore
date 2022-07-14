@@ -1,4 +1,5 @@
 *.lock
+.yarn
 src/
 esbuild.js
 tsconfig.json

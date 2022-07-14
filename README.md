@@ -20,6 +20,10 @@ Plug 'camel-tooling/coc-camel', {'do': 'yarn install --frozen-lockfile && yarn b
 
 call plug#end()
 ```
+OR you can use `CocInstall` to install Camel Language Server.
+```
+CocInstall coc-camel
+```
 ## Camel LS Demo
 
 For instance, code completion for XML with Camel DSL. The capabilities are based on the [Camel Language Server](https://github.com/camel-tooling/camel-language-server/).
@@ -34,7 +38,6 @@ For instance, code completion for JAVA with Camel DSL. The capabilities are base
 ## How to contribute 
 To build local development environment please run these commands at the project root.
 ```
-npm install esbuild
 yarn
 ```
 

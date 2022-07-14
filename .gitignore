@@ -1,3 +1,4 @@
+*.lock
 .eslintrc.js
 lib/
 node_modules/
