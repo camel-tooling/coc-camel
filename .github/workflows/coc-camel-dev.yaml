@@ -5,8 +5,10 @@
 name: 'Build coc-camel'
 
 on:
-  push:
+  push: 
     branches: [ main ]
+    tags: 
+     - "*"
   pull_request:
     branches: [ main ]
 
