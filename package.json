@@ -1,6 +1,6 @@
 {
   "name": "coc-camel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Camel Language extension for coc.nvim",
   "repository": {
     "type": "git",
